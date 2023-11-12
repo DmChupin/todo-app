@@ -3,6 +3,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CtButtonComponent } from 'src/app/components/ct-button/ct-button.component';
 import { CtDialogService } from 'src/app/components/ct-dialog/ct-dialog.service';
 import { CtInputComponent } from 'src/app/components/ct-input/ct-input.component';
+import { DragNDropDirective } from 'src/app/directives/drag-n-drop/drag-n-drop.directive';
 import { ITask } from 'src/app/models/tasks.model';
 
 @Component({
@@ -10,7 +11,7 @@ import { ITask } from 'src/app/models/tasks.model';
 	selector: 'app-todo-card',
 	templateUrl: './todo-card.component.html',
 	styleUrls: ['./todo-card.component.scss'],
-	imports: [CtInputComponent, CtButtonComponent, ReactiveFormsModule],
+	imports: [CtInputComponent, CtButtonComponent, ReactiveFormsModule, DragNDropDirective],
 })
 export class TodoCardComponent {
 	@Input()
