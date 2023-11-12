@@ -1,0 +1,22 @@
+.t-button {
+	background-color: #ff8c67;
+	border: none;
+	color: #fff;
+	min-width: 100px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	opacity: 1;
+
+	&:hover {
+		opacity: 0.75;
+	}
+}
+.t-div {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	font-size: 1.2em;
+	font-weight: 700;
+}

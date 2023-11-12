@@ -1,0 +1,36 @@
+<div class="wrapper" #view>
+	<span class="content"> {{ task.text }} - {{ task.author }} </span>
+	<div class="btn-group">
+		<button class="btn-with-icon">
+			<img class="icon" src="../../../../assets/icons/trash-bin.svg" />
+		</button>
+		<button class="btn-with-icon" (click)="openModal(modalDialog)">
+			<img class="icon" src="../../../../assets/icons/edit.svg" />
+		</button>
+	</div>
+</div>
+
+<ng-template #modalDialog>
+	<div class="modal-add">
+		<div class="modal-add-inputs">
+			<form [formGroup]="updateForm">
+				<ct-input
+					class="modal-add-input"
+					formControlName="author"
+					caption="Author"
+				>
+				</ct-input>
+				<ct-input
+					class="modal-add-input"
+					formControlName="text"
+					caption="Text"
+				>
+				</ct-input>
+			</form>
+		</div>
+		<div class="modal-add-buttons">
+			<ct-button (onClick)="closeModal()">Cancel</ct-button>
+			<ct-button (onClick)="updateData()">Save</ct-button>
+		</div>
+	</div>
+</ng-template>

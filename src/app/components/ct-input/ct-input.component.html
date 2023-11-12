@@ -1,0 +1,12 @@
+<div class="wrapper">
+	<label for="t-input" class="t-label">{{ caption }}</label>
+	<div class="t-div">
+		<input
+			[(ngModel)]="value"
+			(ngModelChange)="onChange($event)"
+			class="t-input"
+			id="t-input"
+		/>
+		<ng-content></ng-content>
+	</div>
+</div>

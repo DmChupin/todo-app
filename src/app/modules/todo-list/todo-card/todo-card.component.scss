@@ -1,0 +1,49 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	border-radius: 7px;
+	border: 3px solid darksalmon;
+	padding: 10px 5px 0px 5px;
+	margin: 5px 0px 5px 0px;
+}
+
+.content {
+	font-size: 0.7em;
+}
+.icon {
+	width: 20px;
+}
+.btn-group {
+	margin-top: 5px;
+	display: flex;
+	justify-content: flex-end;
+}
+.btn-with-icon {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	opacity: 1;
+
+	&:hover {
+		opacity: 0.75;
+	}
+}
+
+.modal-add {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&-buttons {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-inputs {
+		display: flex;
+		flex-direction: column;
+	}
+	&-input {
+		margin: 10px;
+	}
+}
