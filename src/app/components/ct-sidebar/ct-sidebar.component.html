@@ -1,12 +1,15 @@
 <div class="t-sidebar" [class.sidebar-slide-in]="opened">
-	<div class="t-sidebar-close" (click)="opened = !opened">X</div>
 	<div class="wrapper">
-		<h3>Header page</h3>
-		<div class="">Section 1</div>
-		<div>Section 2</div>
-		<div>Section 3</div>
-		<div>Section 4</div>
-		<div>Section 5</div>
-		<div>Section 6</div>
+		<div class="navigation">
+			<ul *ngFor="let section of sections" class="navigation-section">
+				<li class="navigation-section-item">
+					<img class="navigation-section-item-image" src='../../../assets/icons/{{section.icon}}'>
+					<span class="navigation-section-item-text">
+						{{section.name}}
+					</span>
+				</li>
+			</ul>
+		</div>
+		
 	</div>
 </div>

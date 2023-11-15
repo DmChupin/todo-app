@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CtButtonComponent } from './components/ct-button/ct-button.component';
 import { TodoListComponent } from './modules/todo-list/todo-list.component';
 import { CtSidebarComponent } from './components/ct-sidebar/ct-sidebar.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './modules/header/header.component';
 @NgModule({
 	declarations: [AppComponent],
 	imports: [

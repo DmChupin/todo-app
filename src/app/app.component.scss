@@ -8,5 +8,12 @@ body {
 }
 
 .wrapper {
-	margin-top: 50px;
+	margin-top: 43.2px;
+	margin-left: 0;
+    transition: all 600ms;
+
+	&-sidebar-opened {
+		margin-left: 300px;
+		
+	}
 }

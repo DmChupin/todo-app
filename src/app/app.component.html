@@ -3,7 +3,7 @@
 </div>
 <ct-button (onClick)="onClick($event)"> accept </ct-button> -->
 <app-header (sidebarEvent)="sidebarEvent()"></app-header>
-<div class="wrapper">
-	<ct-sidebar #sidebar></ct-sidebar>
+<div class="wrapper" [class.wrapper-sidebar-opened]="sidebar.opened">
+	<ct-sidebar #sidebar [sections]="sections"></ct-sidebar>
 	<app-todo-list></app-todo-list>
 </div>

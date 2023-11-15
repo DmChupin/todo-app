@@ -1,34 +1,5 @@
 <div class="wrapper">
-	<!-- <ct-column>
-		<span class="column-header">To Do</span>
-		<ct-input caption="Add new task"
-			><img class="icon" src="../../../assets/icons/send.svg"
-		/></ct-input>
-		<app-todo-card> </app-todo-card>
-		<app-todo-card> </app-todo-card>
-		<app-todo-card> </app-todo-card>
-		<app-todo-card> </app-todo-card>
-	</ct-column>
-	<ct-column>
-		<span class="column-header">In Progress</span>
-		<ct-input caption="Add new task">
-			<img class="icon" src="../../../assets/icons/send.svg"
-		/></ct-input>
-		<app-todo-card> </app-todo-card>
-		<app-todo-card> </app-todo-card>
-		<app-todo-card> </app-todo-card>
-		<app-todo-card> </app-todo-card>
-	</ct-column>
-	<ct-column>
-		<span class="column-header">Review</span>
-		<ct-input caption="Add new task"
-			><img class="icon" src="../../../assets/icons/send.svg"
-		/></ct-input>
-		<app-todo-card> </app-todo-card>
-		<app-todo-card> </app-todo-card>
-		<app-todo-card> </app-todo-card>
-		<app-todo-card> </app-todo-card>
-	</ct-column> -->
+	
 
 	<ct-column *ngFor="let taskColumn of taskColumns$ | async">
 		<span class="column-header">{{ taskColumn.name }}</span>

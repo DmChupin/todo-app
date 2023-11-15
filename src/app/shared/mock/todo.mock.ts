@@ -1,4 +1,4 @@
-import { IColumn } from 'src/app/models/tasks.model';
+import { IColumn } from 'src/app/models/task.model';
 
 export const tasksMock: IColumn[] = [
 	{

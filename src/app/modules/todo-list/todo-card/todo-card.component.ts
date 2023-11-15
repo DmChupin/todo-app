@@ -4,7 +4,7 @@ import { CtButtonComponent } from 'src/app/components/ct-button/ct-button.compon
 import { CtDialogService } from 'src/app/components/ct-dialog/ct-dialog.service';
 import { CtInputComponent } from 'src/app/components/ct-input/ct-input.component';
 import { DragNDropDirective } from 'src/app/directives/drag-n-drop/drag-n-drop.directive';
-import { ITask } from 'src/app/models/tasks.model';
+import { ITask } from 'src/app/models/task.model';
 
 @Component({
 	standalone: true,

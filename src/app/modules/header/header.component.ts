@@ -13,4 +13,6 @@ export class HeaderComponent {
 	openSidebar() {
 		this.sidebarEvent.emit();
 	}
+
+	home(){}
 }
