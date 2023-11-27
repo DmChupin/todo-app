@@ -9,6 +9,7 @@ import { CtButtonComponent } from './components/ct-button/ct-button.component';
 import { TodoListComponent } from './modules/todo-list/todo-list.component';
 import { CtSidebarComponent } from './components/ct-sidebar/ct-sidebar.component';
 import { HeaderComponent } from './modules/header/header.component';
+import { NotificationListComponent } from './modules/notification-list/notification-list.component';
 @NgModule({
 	declarations: [AppComponent],
 	imports: [
@@ -21,6 +22,7 @@ import { HeaderComponent } from './modules/header/header.component';
 		CtSidebarComponent,
 		TodoListComponent,
 		HeaderComponent,
+		NotificationListComponent,
 	],
 	providers: [],
 	bootstrap: [AppComponent],

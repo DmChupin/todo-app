@@ -3,13 +3,15 @@
 		<div class="navigation">
 			<ul *ngFor="let section of sections" class="navigation-section">
 				<li class="navigation-section-item">
-					<img class="navigation-section-item-image" src='../../../assets/icons/{{section.icon}}'>
+					<img
+						class="navigation-section-item-image"
+						src="../../../assets/icons/{{ section.icon }}"
+					/>
 					<span class="navigation-section-item-text">
-						{{section.name}}
+						{{ section.name }}
 					</span>
 				</li>
 			</ul>
 		</div>
-		
 	</div>
 </div>

@@ -1,14 +1,16 @@
-<div class="wrapper">
-	
-
-	<ct-column *ngFor="let taskColumn of taskColumns$ | async">
+<form class="wrapper" [formGroup]="addTaskForm">
+	<ct-column *ngFor="let taskColumn of taskColumns">
 		<span class="column-header">{{ taskColumn.name }}</span>
-		<ct-input caption="Add new task"
-			><img class="icon" src="../../../assets/icons/send.svg"
-		/></ct-input>
+		<ct-input caption="Add new task" formControlName="{{ taskColumn.id }}">
+			<button class="button-submit" (click)="addTask(taskColumn.id)">
+				<img
+					class="icon"
+					src="../../../assets/icons/send.svg"
+				/></button
+		></ct-input>
 		<app-todo-card
 			*ngFor="let task of taskColumn?.tasks"
 			[task]="task"
 		></app-todo-card>
 	</ct-column>
-</div>
+</form>

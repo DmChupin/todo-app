@@ -10,10 +10,9 @@ body {
 .wrapper {
 	margin-top: 43.2px;
 	margin-left: 0;
-    transition: all 600ms;
+	transition: all 600ms;
 
 	&-sidebar-opened {
 		margin-left: 300px;
-		
 	}
 }

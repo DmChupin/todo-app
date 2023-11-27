@@ -1,0 +1,28 @@
+.wrapper {
+	position: absolute;
+	width: 400px;
+	right: 10px;
+	top: 35px;
+	background-color: white;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+	z-index: 2;
+	border-radius: 5px;
+}
+
+li {
+	list-style-type: none;
+	border-radius: 5px;
+	cursor: pointer;
+	&:hover {
+		background-color: #eee;
+	}
+}
+
+.notifications {
+	&-list {
+		padding: 0;
+		&-item {
+			margin-bottom: 5px;
+		}
+	}
+}

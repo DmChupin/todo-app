@@ -1,0 +1,27 @@
+.notification {
+	max-height: 100px;
+	display: flex;
+	flex-direction: row;
+
+	&-icon {
+		width: 45px;
+
+		&-wrapper {
+			padding: 5px 10px 5px 10px;
+		}
+	}
+
+	&-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&-text {
+			font-size: 15px;
+		}
+		&-time {
+			font-size: 13px;
+			color: grey;
+		}
+	}
+}

@@ -10,23 +10,21 @@ import { ISection } from './models/section.model';
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit{
-
+export class AppComponent implements OnInit {
 	@ViewChild(CtSidebarComponent, { static: false })
 	sidebar: CtSidebarComponent | undefined;
 
 	private sectionService = inject(SectionsService);
 	readonly sections$: Observable<ISection[] | null> = this.sectionService.getSections$();
-	sections:ISection[] | null = []
+	sections: ISection[] | null = [];
 
 	ngOnInit(): void {
 		this.sections$.subscribe(result => {
 			console.log(result);
 			this.sections = result;
-		})
+		});
 	}
 	sidebarEvent() {
 		this.sidebar && (this.sidebar.opened = !this.sidebar.opened);
 	}
-
 }
