@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
 import { TodoCardComponent } from './todo-card/todo-card.component';
 import { CtColumnComponent } from 'src/app/components/ct-column/ct-column.component';
 import { CtInputComponent } from 'src/app/components/ct-input/ct-input.component';
@@ -12,6 +12,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 	selector: 'app-todo-list',
 	imports: [TodoCardComponent, CtColumnComponent, CtInputComponent, CommonModule, ReactiveFormsModule],
 	standalone: true,
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	templateUrl: './todo-list.component.html',
 	styleUrls: ['./todo-list.component.scss'],
 })

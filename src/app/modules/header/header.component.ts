@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core';
 import { NotificationListComponent } from '../notification-list/notification-list.component';
 import { CommonModule } from '@angular/common';
 
@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 	templateUrl: './header.component.html',
 	styleUrls: ['./header.component.scss'],
 	imports: [NotificationListComponent, CommonModule],
+	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
 	@Output()

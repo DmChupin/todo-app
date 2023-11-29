@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
 
 @Component({
@@ -7,6 +7,7 @@ import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, NgControl } from 
 	templateUrl: './ct-input.component.html',
 	styleUrls: ['./ct-input.component.scss'],
 	imports: [FormsModule],
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	providers: [
 		{
 			provide: NG_VALUE_ACCESSOR,
